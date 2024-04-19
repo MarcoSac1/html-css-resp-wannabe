@@ -135,12 +135,27 @@ img {
     }
     
 }
-@media screen and (max-width:  480px){
-    .container {
-        width: 100vw;
+@media screen and (max-width: 480px){
+    
+    
+    .row{
+        width: 100%;
         margin: 0 auto;
         padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
-}
 
+    .row > .col {
+        width: 90vw;
+    }
+
+    .card{
+    margin-bottom: 1.5rem;
+    }
+
+    h3{
+        padding-top: 1.5rem;
+    }
+}
